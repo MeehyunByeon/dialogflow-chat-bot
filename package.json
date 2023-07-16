@@ -1,0 +1,26 @@
+{
+  "name": "chatbot-app",
+  "version": "1.0.0",
+  "description": "chatbot-app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "backend": "nodemon index.js",
+    "frontend": "npm run front --prefix client",
+    "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\""
+  },
+  "author": "Jaewon Ahn",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/dialogflow": "^5.9.0",
+    "actions-on-google": "^3.0.0",
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.0",
+    "dialogflow": "^1.2.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.4",
+    "nodemon": "^3.0.1"
+  },
+  "devDependencies": {}
+}
